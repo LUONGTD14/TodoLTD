@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "889362505977",
+    "firebase_url": "https://todoltd-d7a75-default-rtdb.firebaseio.com",
+    "project_id": "todoltd-d7a75",
+    "storage_bucket": "todoltd-d7a75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889362505977:android:4f81fe5228d219018f8228",
+        "android_client_info": {
+          "package_name": "com.example.todoltd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzWTUb1FKjkGCd5McP8Oa6xBwbtZlRVrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

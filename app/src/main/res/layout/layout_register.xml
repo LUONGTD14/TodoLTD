@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor"
+    android:elevation="5dp"
+    app:cardCornerRadius="@dimen/loginCardRadius">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="0dp"
+            android:text="@string/register" />
+
+        <TextView
+            android:id="@+id/tvsuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:text="@string/successfully"
+            android:textColor="@color/red1"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:textAlignment="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                android:id="@+id/edtNameUserRegister"
+                style="@style/modifiedEditText"
+                android:hint="@string/fullname"
+                android:inputType="text"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                android:id="@+id/edtEmailUerRegister"
+                style="@style/modifiedEditText"
+                android:hint="@string/login_email_hint"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvWrEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/wrong_email_format"
+                android:textColor="@color/red1"
+                android:textSize="8sp"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/dimen1dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edtPwUerRegister"
+                style="@style/modifiedEditText"
+                android:hint="@string/login_password_hint"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvWrPassRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/min_8_characters_upper_lower_case_numbers_special_characters"
+                android:textColor="@color/red1"
+                android:textSize="8sp"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/dimen1dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/edtPwConfirmUerRegister"
+                style="@style/modifiedEditText"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tvNoMatPwRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/password_not_match"
+                android:textColor="@color/red1"
+                android:textSize="8sp"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/register" />
+
+        <TextView
+            android:id="@+id/tvRegisterToLogin"
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="@string/signup_login_hint"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
